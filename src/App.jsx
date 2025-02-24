@@ -1,11 +1,14 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
+import Header from './Components/Header'
 
 function App() {
 
   return (
-    <>
-      <h1>Hello Assignment Seven!</h1>
-    </>
+    <div className='max-w-7xl m-auto '>
+      <Header/>
+      <Outlet/>
+    </div>
   )
 }
 
