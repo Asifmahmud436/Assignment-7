@@ -18,10 +18,19 @@ export default function Players() {
     const [avalaible,setAvailable] = useState(true)
     const [playerData, setPlayerData] = useState(AllPlayers.players)
 
+    const handleSelectPlayers = (id) =>{
+        const newSelectedPlayers = playerData.map(player =>{
+            return player.playerId == id ? {...player,status:true} : player;
+        })
+        setPlayerData(newSelectedPlayers)
+        
+    }
+
     const availablePlayerArray = playerData
     .filter(player => player.status == false)
     .map(player => <AvailablePlayers 
         key={player.playerId}
+        id={player.playerId}
         name={player.name}
         country={player.country}
         image={playerImg}
@@ -29,7 +38,15 @@ export default function Players() {
         battingType={player.battingType}
         bowlingType={player.bowlingType}
         biddingPrice={player.biddingPrice}
+        choosePlayer={handleSelectPlayers}
         />)
+
+    
+
+    console.log(playerData)
+    
+    
+
   return (
     <div>
       <nav className="flex justify-between items-center pb-3">

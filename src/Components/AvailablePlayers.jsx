@@ -12,7 +12,7 @@ export default function AvailablePlayers(props) {
       <h3 className="font-bold">{props.bowlingType}</h3>
       <div className="flex justify-between items-center">
         <h3 className="font-bold">Price: {props.biddingPrice}</h3>
-        <button type="button" className="px-2 py-1 border-2 border-gray-200 rounded-sm font-bold">Choose Player</button>
+        <button type="button" className="px-2 py-1 border-2 border-gray-200 rounded-sm font-bold" onClick={()=>props.choosePlayer(props.id)}>Choose Player</button>
       </div>
     </div>
   );
