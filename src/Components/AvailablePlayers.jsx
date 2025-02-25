@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function AvailablePlayers(props) {
   return (
     <div className="w-96 border-2 border-gray-300 rounded-2xl p-3">
