@@ -3,7 +3,7 @@ import HeaderLogo from '../assets/logo.png'
 
 export default function Header(){
     return(
-        <div className='my-3 flex justify-around items-center'>
+        <div className='my-3 flex justify-between items-center'>
             <div>
                 <img src={HeaderLogo} alt="" />
             </div>

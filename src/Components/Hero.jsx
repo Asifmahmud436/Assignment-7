@@ -3,7 +3,7 @@ import bannerMain from '../assets/banner-main.png'
 export default function Hero(){
     
     return(
-        <div style={{backgroundImage: `url(${bgShadow})`}} className='flex flex-col items-center rounded-2xl'>
+        <div style={{backgroundImage: `url(${bgShadow})`}} className='flex flex-col items-center rounded-2xl my-6'>
             <img src={bannerMain} alt=""/>
             <h2 className='text-3xl my-5 font-bold'>Assemble Your Ultimate Dream 11 Cricket Team</h2>
             <p className='my-3'>Beyond Boundaries Beyond Limits</p>
