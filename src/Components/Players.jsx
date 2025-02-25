@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AllPlayers from '../assets/players.json'
 import AvailablePlayers from "./AvailablePlayers";
+import playerImg from '../assets/playerImg.webp'
 
 // {
 //     "playerId": 7,
@@ -23,7 +24,7 @@ export default function Players() {
         key={player.playerId}
         name={player.name}
         country={player.country}
-        image={player.image}
+        image={playerImg}
         role={player.role}
         battingType={player.battingType}
         bowlingType={player.bowlingType}
@@ -31,7 +32,7 @@ export default function Players() {
         />)
   return (
     <div>
-      <nav className="flex justify-between pb-3">
+      <nav className="flex justify-between items-center pb-3">
         <div>
           {avalaible ? <h1 className="font-bold">Available Players</h1> : <h1 className="font-bold">Selected Players(4/6)</h1>}
         </div>
@@ -40,7 +41,7 @@ export default function Players() {
             <button type="button" className={`px-3 py-2 rounded-e-2xl ${avalaible? 'bg-amber-50':'bg-lime-400'}`} onClick={()=>setAvailable(false)}>Selected (0)</button>
         </div>
       </nav>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pt-3">
         {availablePlayerArray}
       </div>
     </div>
