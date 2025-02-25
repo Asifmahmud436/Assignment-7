@@ -13,7 +13,7 @@ export default function Header(){
                 <NavLink to='/'>Teams</NavLink>
                 <NavLink to='/'>Schedules</NavLink>
                 {/* <NavLink to='/'>Coins</NavLink> */}
-                <button className='border-amber-400 border-2 py-1 px-3 rounded '>100 Coins</button>
+                <button className='border-gray-200 border-2 py-1 px-3 rounded-sm font-bold'>100 Coins</button>
             </div>
         </div>
     )
