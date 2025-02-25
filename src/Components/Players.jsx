@@ -73,7 +73,7 @@ export default function Players() {
             <button type="button" className={`px-3 py-2 rounded-e-2xl ${avalaible? 'bg-amber-50':'bg-lime-400'}`} onClick={()=>setAvailable(false)}>Selected ({selectedPlayerArray.length})</button>
         </div>
       </nav>
-      {avalaible ? <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-3 max-w-7xl m-auto">
+      {avalaible ? <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-3 max-w-7xl m-auto mb-24">
         {availablePlayerArray}
       </div>
        :
